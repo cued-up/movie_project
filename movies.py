@@ -18,8 +18,8 @@ def add_movie():
 
 def display_movie():
     for movie in movies:
-        print(f"Movie Title: {movie ['title']}")
-        print(f"Movie Year: {movie ['year']}")
+        print(f"Movie Title: {movie['title']}")
+        print(f"Movie Year: {movie['year']}")
 
 
 def find_movie():
@@ -27,8 +27,8 @@ def find_movie():
 
     for movie in movies:
         if movie['title'] == get_title:
-            print(f"Movie Title: {movie ['title']}")
-            print(f"Movie Year: {movie ['year']}")
+            print(f"Movie Title: {movie['title']}")
+            print(f"Movie Year: {movie['year']}")
 
 prompt = 'enter A for adding, D for displaying, F for finding, or Q for quitting: '
 
