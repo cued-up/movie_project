@@ -2,8 +2,9 @@ movies = [
     {'title': 'movie 1', 'year': 2001},
     {'title': 'movie 2', 'year': 2002},
     {'title': 'movie 3', 'year': 2006},
-    {'title': 'movie 4', 'year': 2004}
-    ]
+    {'title': 'movie 4', 'year': 2004},
+    {'title': 'movie 5', 'year': 2009}
+]
 
 def add_movie():
     get_title = input('Enter the title of the movie: ')
