@@ -1,3 +1,7 @@
+import logging
+
+logging.basicConfig(filename='activity.log' ,level=logging.INFO)
+
 movies = [
     {'title': 'movie 1', 'year': 2001},
     {'title': 'movie 2', 'year': 2002},
@@ -16,6 +20,7 @@ def add_movie():
         'year': get_year
         }
     )
+    logging.info(f"User added a movie {get_title.title()} in {get_year}")
 
 def display_movie():
     for movie in movies:
@@ -30,22 +35,34 @@ def find_movie():
         if movie['title'] == get_title:
             print(f"Movie Title: {movie['title']}")
             print(f"Movie Year: {movie['year']}")
+            logging.info(f"User is searching for {movie['title']} in {movie['year']}")
 
-prompt = 'enter A for adding, D for displaying, F for finding, or Q for quitting: '
+prompt = 'enter a for adding, d for displaying, f for finding, or q for quitting: '
 
 def main():
     selection = input(prompt)
+    logging.info(f'User inputed {selection}')
+
     while selection.lower() != 'q':
+
         if selection.lower() == 'a':
             add_movie()
+            logging.info('User added a movie')
+
         elif selection.lower() == 'd':
             display_movie()
+            logging.info('User displaying the existing movies')
+            
         elif selection.lower() == 'f':
             find_movie()
+            logging.info('User is searching for a movie')
+
         else:
             print('Invalid input')
+            logging.info('User inputted an invalid value.')
 
         selection = input(prompt)
+    logging.info('User quitted the app.')
 
 
 main()
