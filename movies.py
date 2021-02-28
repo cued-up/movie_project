@@ -13,19 +13,20 @@ movies = [
 def add_movie():
     get_title = input('Enter the title of the movie: ')
     get_year = input('Enter the year: ')
-
+    
     movies.append(
-    {
-        'title': get_title,
-        'year': get_year
+        {
+            'title' : get_title,
+            'year' : get_year
         }
     )
     logging.info(f"User added a movie {get_title.title()} in {get_year}")
 
 def display_movie():
-    for movie in movies:
-        print(f"Movie Title: {movie['title']}")
-        print(f"Movie Year: {movie['year']}")
+    for movie in movies: 
+        print(f"{movie['title']} is made in {movie['year']}")
+    
+    logging.info(f"User displayed all the movies.")
 
 
 def find_movie():
@@ -59,7 +60,7 @@ def main():
 
         else:
             print('Invalid input')
-            logging.info('User inputted an invalid value.')
+            logging.warning(f'User inputted an invalid value.{selection}')
 
         selection = input(prompt)
     logging.info('User quitted the app.')

@@ -4,3 +4,22 @@ INFO:root:User added a movie
 INFO:root:User displaying the existing movies
 INFO:root:User is searching for test movie in 1990
 INFO:root:User is searching for a movie
+INFO:root:User inputed d
+INFO:root:User inputed d
+INFO:root:User inputed d
+INFO:root:User displaying the existing movies
+INFO:root:User quitted the app.
+INFO:root:User inputed d
+INFO:root:User displaying the existing movies
+INFO:root:User added a movie New Movie in 2010
+INFO:root:User added a movie
+INFO:root:User quitted the app.
+INFO:root:User inputed a
+INFO:root:User added a movie Test Movie in 2020
+INFO:root:User added a movie
+INFO:root:User displaying the existing movies
+INFO:root:User inputed d
+INFO:root:User displaying the existing movies
+INFO:root:User is searching for movie 2 in 2002
+INFO:root:User is searching for a movie
+INFO:root:User quitted the app.
